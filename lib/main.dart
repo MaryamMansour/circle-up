@@ -40,7 +40,6 @@ class MyApp extends StatelessWidget {
         AddPostScreen.routeName: (context) => AddPostScreen(),
         LoginScreen.routeName: (context) => LoginScreen(),
         SignUp.routeName: (context)=>SignUp()
-        // CreateAcoount.routeName: (context)=>CreateAcoount(),
 
       },
       debugShowCheckedModeBanner: false,

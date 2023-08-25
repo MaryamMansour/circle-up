@@ -7,7 +7,7 @@ import '../models/user_model.dart';
 class FireBaseFunctions{
 
 
-  // IT point on the collection
+
   static CollectionReference<PostModel> getPostsCollection()
   {
     return FirebaseFirestore.instance.collection(PostModel.COLLECTION_NAME)
@@ -17,14 +17,13 @@ class FireBaseFunctions{
     );
   }
 
-  //Both are static bc
-  // I want to call it by class directly
+
 
   static Future<void> addPostToFirestore(PostModel post){
     var collection = getPostsCollection();
     var docRef= collection.doc();
-    post.id= docRef.id; //عشان التاسم ملهاش اي دي هاخدها من الدوك
-    return docRef.set(post); // و باقي الحجات الفاضية هعملها سيت ب اللي عندي ف التاسك
+    post.id= docRef.id;
+    return docRef.set(post);
   }
 
 
@@ -33,14 +32,6 @@ class FireBaseFunctions{
     var collection = getPostsCollection();
     return collection.snapshots();
   }
-  // static Future<void> deleteTask(String id )
-  // {
-  //   return getTaskCollection().doc(id).delete();
-  // }
-
-  // static Future<void> updateTask(String id , TaskModel task){
-  //   return getTaskCollection().doc(id).update(task.toJson());
-  // }
 
 
   static Future<UserModel?> readUser(String id)async{
@@ -59,8 +50,6 @@ class FireBaseFunctions{
         email: email,
         password: password,
       );
-      //credential.user!.sendEmailVerification(); email verify
-      //FirebaseAuth.instance.sendPasswordResetEmail(email: "email")
       UserModel userModel = UserModel(id: credential.user!.uid
           ,name: name, email: email);
       addUserToFirestore(userModel).then((value) {created();});

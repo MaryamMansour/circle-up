@@ -42,7 +42,7 @@ class _LoginScreenState extends BaseView<LoginViewModel, LoginScreen> implements
       create: (context) => viewModel,
       builder: (context, child) =>  Scaffold(
         backgroundColor: Colors.white,
-        //another way other than single child to avoid keyboard over flow
+
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
           backgroundColor:Color(0xFF202A44),

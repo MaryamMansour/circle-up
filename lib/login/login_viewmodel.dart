@@ -13,7 +13,7 @@ class LoginViewModel extends BaseViewModel<LoginConnector>{
             email: email,
             password: password
         );
-        // logged();
+
         connector!.goToHome();
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {
