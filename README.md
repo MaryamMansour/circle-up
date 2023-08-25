@@ -1,16 +1,25 @@
-# social
+# Social App
 
-A new Flutter project.
+This is a social media app that allows users to post, comment, like, and explore a timeline of posts.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Authentication**: Users can sign up, log in, and log out using Firebase authentication.
 
-A few resources to get you started if this is your first Flutter project:
+- **Timeline**: Users can explore a timeline of posts from different users.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Posting**: Users can create new posts with content and images.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Commenting**: Users can add comments to posts.
+
+- **Liking**: Users can like posts, and the like count is displayed.
+
+## Technologies Used
+
+- **Firebase Authentication**: Used for user registration and login.
+
+- **Firestore**: Used to store and retrieve user data, posts, and comments.
+
+- **Shared Preferences**: Used to store and retrieve local data, such as user preferences.
+
+- **Provider**: Used for state management to handle user authentication and app-wide data.
