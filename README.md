@@ -23,3 +23,31 @@ This is a social media app that allows users to post, comment, like, and explore
 - **Shared Preferences**: Used to store and retrieve local data, such as user preferences.
 
 - **Provider**: Used for state management to handle user authentication and app-wide data.
+
+- ## 📸 Screenshots
+
+<details>
+<summary>Click to expand</summary>
+
+
+
+### Login Screen
+<img src= "images/login.jpg" alt="login" width="210" height="450">
+
+### signup Screen
+<img src="images/signup.jpg" alt="signUp" width="210" height="450">
+
+### Timeline
+<img src="images/timeline.jpg" alt=" List" width="210" height="450">
+
+### Timeline 
+<img src="images/timeline2.jpg" alt="= List" width="210" height="450">
+
+### Add new Post
+
+<img src="images/post.jpg" alt="post" width="210" height="450">
+
+
+
+
+</details>
