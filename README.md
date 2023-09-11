@@ -1,4 +1,4 @@
-# Social App
+# CircleUp - Flutter app
 
 This is a social media app that allows users to post, comment, like, and explore a timeline of posts.
 
